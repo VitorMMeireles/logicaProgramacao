@@ -23,4 +23,4 @@ while True:
     
 media = sum(lista_notas) / len(lista_notas)
 
-print(media)
+print("A média é:",media)
