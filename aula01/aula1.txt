@@ -1,0 +1,7 @@
+CRUD -> Create , Read, Update,Delete
+
+cd -> navegar em diretórios
+cd .. -> volta diretório
+ls  -> lista o que tem no diretório
+path -> caminho do diretório
+cd aula01\aula -> vai diretamente para a subpasta desejada
