@@ -27,7 +27,7 @@ while True:
             'marca'   : marca   
         }
 
-        carros.append(carros)
+        carros.append(carro)
         proximo_id +=1
 
         print("✅Carro cadastrado com sucesso!")
