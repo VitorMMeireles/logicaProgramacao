@@ -67,7 +67,7 @@ while True:
     elif opcao == "4" :
         print("\nLista de Carros")
         print(f"ID: {carro['id']}| Modelo: {carro['modelo']}| Preço: {carro['preco']}| Marca: {carro['marca']}")
-        id_busca = int(input("Digite o id do carro para deletar"))
+        id_busca = int(input("Digite o id do carro para deletar: "))
         encontrado = False
         for carro in carros:
             if carro['id'] == id_busca:
