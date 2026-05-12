@@ -4,7 +4,7 @@ import time
 carros = []
 proximo_id = 1
 
-os.system("cls")
+os.system("cls")   
 while True:
     print("===== Sistema de Carros 🚗 =====")
     print("1 - Cadastrar carro")
@@ -16,9 +16,11 @@ while True:
     opcao = input("Escolha uma opção: ")
 #create
     if opcao == "1":
+        os.system("cls")
         modelo = input('Digite o modelo do carro: ').title()
         preco = float(input ('Digite o preço do carro: ').replace(",", "."))
         marca = input('Digite a marca do carro: ')
+        
         
         carro = {
             'id'      : proximo_id,
@@ -28,9 +30,9 @@ while True:
         }
         carros.append(carro)
         proximo_id +=1
-        with open('lista_carros.txt', "w") as arquivo:
+        with open('lista_carros.txt', "a") as arquivo:
                 for carro in carros:
-                    arquivo.write(f"ID: {carro['id']}| Modelo: {carro['modelo']}| Valor: {carro['preco']}| Marca: {carro['marca']}\n")
+                    arquivo.write(f"Modelo: {carro['modelo']}| Valor: {carro['preco']}| Marca: {carro['marca']}\n")
 
         print("✅Carro cadastrado com sucesso!")
 #read
